@@ -8,6 +8,7 @@ for pod_file in $(find pods -type f -name *.y*ml); do
 
   if [ "$pod_file" = "pods/undeclared-volumes-mounted.yml" ]; then
     # object files that are expected to fail should have non-zero exit code
+    echo "expecting failure..."
     if echo_and_run $cmd; then
       echo "'$cmd' expected to fail but did not"
       exit 1
