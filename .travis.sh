@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/bin/bash -e
 
 # print timestamp and command then execute the command
 echo_and_run() { echo "$(date +%T) $*"; $*; }
