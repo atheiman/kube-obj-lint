@@ -1,0 +1,10 @@
+metadata:
+  name: unused-volumes
+spec:
+  volumes:
+    - name: data
+    - name: unused
+  containers:
+    - name: myapp
+      volumeMounts:
+        - name: data

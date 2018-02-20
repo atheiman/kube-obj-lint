@@ -1,0 +1,10 @@
+metadata:
+  name: undeclared-volumes-mounted
+spec:
+  volumes:
+    - name: data
+  containers:
+    - name: myapp
+      volumeMounts:
+        - name: data
+        - name: undeclared
